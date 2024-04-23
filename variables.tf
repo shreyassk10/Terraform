@@ -7,13 +7,21 @@ variable "location" {
 }
 
 variable "address_space" {
-  description = "The name of the Subnet within the Virtual Network."
+  description = ["10.0.0.0/16"]
 }
 
 variable "app_service_plan_name" {
-  description = "The name of the App Service Plan."
+  description = "test_01"
 }
 
-variable "app_service_name" {
-  description = "The name of the App Service."
+variable "sku_tier" {
+  description = "Standard"
 }
+
+variable "sku_size" {
+  description = "S1"
+}
+
+change
+vnet name
+subnet name

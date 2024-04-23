@@ -11,10 +11,12 @@
    - [ ] variables.tf -> Variables are defined in this file.
    - [ ] output.tf -> once resources are applied then it will give results for specific step.
    - [ ] providers.tf -> it contains cloud providers configuration
+
    
 
-Usage :
-Clone the project using ssh configuration into any machine or while setting up any Ci tool with repository reference the name and use the below commands.
+## Usage :
+
+Clone the project using ssh configuration into any machine or while setting up any Ci tool with repository, reference the name and use the below commands.
 
 - Terraform init -> It initializes the directory and downloads required provider, child module, backend along with the configuration.
 

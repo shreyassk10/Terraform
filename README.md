@@ -1,12 +1,12 @@
 # Azure App services creation using Terraform
 ## Explanation :
 
-1. terraform-modules
+1. Terraform-modules
    - [ ] This directory contains all the modules.
    - [ ] Any variable conditional needs to be checked in the variable.tf
    - [ ] Create multiple environvements as a module and reuse the code according to the environments.
          
-2. terraform-resources
+2. Terraform-resources
    - [ ] main.tf -> This file contains all the resources that we are going to deploy.
    - [ ] variables.tf -> Variables are defined in this file.
    - [ ] output.tf -> once resources are applied then it will give results for specific step.

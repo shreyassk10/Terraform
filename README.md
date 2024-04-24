@@ -1,5 +1,5 @@
 # Azure App services creation using Terraform
-## Explanation :
+## Explaination :
 
 1. Terraform-modules
    - [ ] This directory contains all the modules.
@@ -16,7 +16,16 @@
 
 ## Usage :
 
-Clone the project using ssh configuration into any machine or while setting up any Ci tool with repository, reference the name and use the below commands.
+
+Setup the git i.e install git in vm
+
+create terraform directory in vm
+
+create ssh connection b/w vm and github
+
+intialize the command "git init"
+
+clone the repository by giving command git clone "url_of _the _repository"
 
 - Terraform init -> It initializes the directory and downloads required provider, child module, backend along with the configuration.
 
@@ -27,3 +36,6 @@ Clone the project using ssh configuration into any machine or while setting up a
 - Terraform apply -> This step applies the resources specified in this code.
 
   ### Recomended: After creating the resources state file will be created, it should be stored as a backend in azure blob storage.
+
+
+  Clone the project using ssh configuration into any machine or while setting up any Ci tool with repository, reference the name and use the below commands.

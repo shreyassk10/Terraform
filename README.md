@@ -17,18 +17,25 @@
 ## Usage :
 
 
-Setup the git i.e install git in vm
+ - [ ] Setup the git i.e install git in vm
 
-create terraform directory in vm
+ - [ ] create terraform directory in vm
 
-create ssh connection b/w vm and github by using below steps:
-  Add the required email and generate it:  ssh-keygen -t ed25519 -C "your_email@example.com"
-  Start the ssh-agent in the background: eval "$(ssh-agent -s)"
-  Add your SSH private key to the ssh-agent: ssh-add ~/.ssh/id_ed25519
+ - [ ] create ssh connection b/w vm and github by using below steps:
+       
+       - Add the required email and generate it:  ssh-keygen -t ed25519 -C "your_email@example.com"
+       
+       - Start the ssh-agent in the background: eval "$(ssh-agent -s)"
+       
+       - Add your SSH private key to the ssh-agent: ssh-add ~/.ssh/id_ed25519
 
-intialize the command "git init"
+ - [ ] intialize the command "git init"
+       
+ - [ ] clone the repository by giving command: git clone "url_of _the _repository"
+       
+       
 
-clone the repository by giving command git clone "url_of _the _repository"
+ After cloning the code from remote repository (GitHub) to local repository (Vm), use the below commands of terraform:
 
 - Terraform init -> It initializes the directory and downloads required provider, child module, backend along with the configuration.
 
@@ -40,5 +47,3 @@ clone the repository by giving command git clone "url_of _the _repository"
 
   ### Recomended: After creating the resources state file will be created, it should be stored as a backend in azure blob storage.
 
-
-  Clone the project using ssh configuration into any machine or while setting up any Ci tool with repository, reference the name and use the below commands.

@@ -13,7 +13,7 @@
    - [ ] providers.tf -> it contains cloud providers configuration
 
    
-
+   
 ## Usage :
 
 
@@ -21,7 +21,10 @@ Setup the git i.e install git in vm
 
 create terraform directory in vm
 
-create ssh connection b/w vm and github
+create ssh connection b/w vm and github by using below steps:
+  Add the required email and generate it:  ssh-keygen -t ed25519 -C "your_email@example.com"
+  Start the ssh-agent in the background: eval "$(ssh-agent -s)"
+  Add your SSH private key to the ssh-agent: ssh-add ~/.ssh/id_ed25519
 
 intialize the command "git init"
 
